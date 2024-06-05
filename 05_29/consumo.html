@@ -1,0 +1,49 @@
+<htlm>
+
+    <head>
+        <title> Consumo </title>
+        <script>
+            let kminicial
+            let kmfinal
+            let preçodagasolina
+            let autonomiadoveiculo
+            let distanciapercorrida
+            let tempodeviagem
+            let quantidadedelistrosgastos
+            let dinheirogastoemgasolina
+
+            tempodeviagem = window.prompt("Por quanto tempo durou a viagem?");
+            tempodeviagem = Number(tempodeviagem);
+
+            kminicial = window.prompt("Digite o km inicial do carro");
+            kminicial = Number(kminicial);
+
+            kmfinal = window.prompt("Digite o km final do carro");
+            kmfinal = Number(kmfinal);
+
+            preçodagasolina = window.prompt("Digite o preço de um litro de gasolina");
+            preçodagasolina = Number(preçodagasolina);
+
+            autonomiadoveiculo = window.prompt("Autonomia do veículo (litros gastos em uma hora)");
+            autonomiadoveiculo = Number(autonomiadoveiculo);
+
+            distanciapercorrida = kmfinal - kminicial;
+            distanciapercorrida = Number(distanciapercorrida);
+            console.log("Distancia percorrida: " + distanciapercorrida);
+
+            quantidadedelitrosgastos = tempodeviagem - autonomiadeveiculo;
+            quantidadedelitrosgastos = Number(quantidadedelitrosgastos);
+            console.log("Quantidade de litros gastos " + quantidadedelitrosgastos);
+
+            dinheirogastoemgasolina = quantidadedelitrosgastos * preçodagasolina;
+            dinheirogastoemgasolina = Number(dinheirogastoemgasolina);
+            console.log("Custo em gasolina: " + dinheirogastoemgasolina);
+
+        </script>
+    </head>
+
+    <body>
+
+    </body>
+
+    </html>
