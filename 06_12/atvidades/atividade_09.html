@@ -5,15 +5,16 @@
          
          let array = []
          let x = 0
-         let soma 
+         let soma = 0 
 
          for(x = 0; x < 10; x++){
             array [x]= window.prompt("Digite um número")
             array [x]= Number(array[x])
-            soma = array [x] + array [x + 1]
+
+            soma += array [x]
             soma = Number(soma)
-            console.log(soma)
          }
+          console.log(soma)
 
 
         </script>
