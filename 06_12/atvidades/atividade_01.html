@@ -1,0 +1,42 @@
+<html>
+   <head>
+       <title> Media </title>
+       <script>
+    let notaUm
+    let notaDois
+    let notaTres
+    let notaQuatro
+    let media
+
+    notaUm = window.prompt("Digite a primeira nota"); 
+    notaUm = Number(notaUm);
+
+    notaDois = window.prompt("Digite a segunda nota");
+    notaDois = Number(notaDois);
+
+    notaTres = window.prompt("Digite a terceira nota");
+    notaTres = Number(notaTres);
+
+    notaQuatro = window.prompt("Digite a quarta nota");
+    notaQuatro = Number(notaQuatro);
+
+    media = (notaUm + notaDois + notaTres + notaQuatro) / 4
+    console.log(media)
+    
+    if (media >= 7){
+         console.log("O aluno foi aprovado")
+    }
+     else if(media >= 5){
+         console.log("O aluno está de recuperação")  
+     }
+      else{
+        console.log("O aluno está reprovado")
+      }
+    
+
+       </script>
+    </head>
+    <body>
+
+    </body>
+</html>    
